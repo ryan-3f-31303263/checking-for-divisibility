@@ -1,2 +1,13 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+program checking_for_divisibility;
+var 
+  ipt,lct:longint;
+begin
+  write ('Enter the number to be tested: ');
+  readln(ipt);
+  writeln;
+  for lct:=1 to 9 do
+    begin
+     if (not(frac(ipt/lct)>0)) then
+       writeln(round(ipt),' is dividable by ',lct,'.');
+    end
+end.
